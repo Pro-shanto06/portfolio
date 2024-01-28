@@ -19,7 +19,7 @@
     --color-light: rgba(255, 255, 255, 0.6);
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-ms: 98%;
+    --container-width-sm: 98%;
     --transition: all 400ms ease;
 }
 
@@ -58,7 +58,9 @@ h1 {
 }
 
 section {
+    padding-top: 5rem;
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section>h2,
