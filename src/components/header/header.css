@@ -1,13 +1,38 @@
-header {
-    height: 130vh;
-    padding-top: 5rem;
-    overflow: hidden;
+.header__container {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    gap: 30%;
 }
 
-.header__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
+.header__content {
+    margin-top: 2rem;
+}
+
+.header__content p {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+  }
+
+/*.....................img.............*/
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    aspect-ratio: 1/1;
+    display: grid;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
+    border-radius: 10rem 10rem 0rem 0rem;
+    overflow: hidden;
+    padding: 0.5rem 0 0 0.5rem;
+    place-items: center;
+}
+
+.me img {
+    max-width: 100%;
 }
 
 /*.............cta............*/
@@ -15,78 +40,54 @@ header {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
-    justify-content: center;
 }
 
 /*.............headersocial............*/
 .header__socials {
+    margin-top: 2.5rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
 }
 
-.header__socials::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+.social__icon {
+    color: var(--color-primary);
+    font-size: 1.6rem;
 }
 
-.header__socials::before {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-}
-
-/*.....................img.............*/
-
-.me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 320px;
-    height: 400px;
-    position: absolute;
-    left: calc(50% - 150px);
-    margin-top: 3rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 0.5rem 0 0 0.5rem;
-}
-
-.resized-image {
-    width: 300px;
-    height: 400px;
-}
 
 /*.....................scroll.............*/
 
-.scroll__down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
-}
+@media screen and (max-width: 1024px) {
+    .header__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-
-@media screen and (max-width:1024px) {
-    header {
-        height: 68vh;
+    .me {
+        width: 100%;
     }
 }
 
-@media screen and (max-width:600px) {
-    header {
-        height: 100vh;
+@media screen and (max-width: 600px) {
+    .header__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .header__socials,
-    .scroll__down {
-        display: none;
+    .me {
+        width: 100%;
+    }
+
+    .cta {
+        flex-direction: column;
+        margin-top: 1.5rem;
+        
+    }
+
+    .header__socials {
+        margin-top: 1.5rem;
+    }
+    .header__content p {
+        text-align:justify;
     }
 }

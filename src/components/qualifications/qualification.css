@@ -1,0 +1,55 @@
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+
+}
+
+.education {
+    display: flex;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 2.5rem; 
+    height: 2.5rem; 
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-bg-variant);
+    font-size: 1.6rem; 
+    margin-right: 1rem; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.education h3 {
+    color: var(--color-primary); 
+    font-size: 1.3rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.education p {
+    color: var(--color-text); 
+    font-size: 1rem; 
+    margin: 0.5rem 0; 
+}
+@media screen and (max-width: 480px) {
+    .timeline-dot {
+        width: 1.8rem; 
+        height: 1.8rem; 
+        font-size: 1.2rem; 
+        margin-right: 0.5rem; 
+    }
+
+    .education h3 {
+        font-size: 1.2rem; 
+    }
+
+    .education p {
+        font-size: 0.9rem; 
+    }
+}
