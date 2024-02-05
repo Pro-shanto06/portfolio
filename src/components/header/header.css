@@ -41,7 +41,7 @@
 
 .cta {
     margin-top: 2.5rem;
-    display: flex;
+    display: grid;
     gap: 1.2rem;
 }
 
@@ -81,11 +81,12 @@
     }
 
     .header__content {
-        margin-top: 2rem; /* Adjusting margin-top for header__content on small screens */
+        margin-top: 2rem;
+         /* Adjusting margin-top for header__content on small screens */
     }
 
     .header__content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .header__content p {
@@ -96,6 +97,21 @@
         margin-top: 1rem; /* Adjusting margin-top for .me on small screens */
         width: 70%;
     }
+
+    .cta {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cta a{
+        width:60%;
+        font-size: 0.8rem;
+    }
+    .cta svg {
+        font-size: 1.2rem;
+    }   
+    .header__socials svg {
+        font-size: 1.6rem;
+      } 
 }
 
 /* Media Query for Medium Devices (601px to 768px) */

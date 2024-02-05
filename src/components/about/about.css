@@ -93,12 +93,16 @@
 
 
     .about__cards {
-        grid-template-columns: 1fr 1fr; /* Adjusting grid layout for small screens */
+        grid-template-columns: 1fr; /* Adjusting grid layout for small screens */
         gap: 1rem; /* Adjusting the gap between cards */
     }
 
     .about__card {
         font-size: 0.8rem; /* Adjusting font size for cards on small screens */
+    }
+
+    .about__content p{
+        font-size: 0.8rem;
     }
 
   
