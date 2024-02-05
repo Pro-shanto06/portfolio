@@ -1,5 +1,3 @@
-/* Updated styles for the header component */
-
 .header__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,14 +6,8 @@
 
 .header__content {
     margin-top: 3rem;
-    color: #333; 
 }
 
-.header__content h5,
-.header__content h1,
-.header__content p {
-    margin: 0;
-}
 
 .header__content h1 {
     font-size: 2.5rem;
@@ -24,26 +16,27 @@
 
 .header__content h5 {
     font-size: 1.2rem;
-    color: #FF8F00; 
+    color: #ec8b0c; 
 }
 
 .header__content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--color-white)
+    color: var(--color-white);
+    text-align : justify;
 }
 
 .me {
-    margin-top:6rem;
-    background: linear-gradient(var(--color-primary), transparent);
+    margin-top: 5rem;
+    margin-left: 5rem;
+    background: radial-gradient(circle at center, var(--color-primary), #2c3e50);
     width: 24rem;
     height: 24rem;
-    border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 8px solid rgba(77, 181, 255, 0.4);
 }
+
 
 .me img {
     max-width: 100%;
@@ -73,44 +66,57 @@
     color: (--color-white); 
 }
 
+.cta svg {
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    font-size: 1.5rem;
+  }
 
-@media screen and (max-width: 768px) {
+  .header__socials svg {
+    font-size: 2rem;
+  }
+
+
+  /* Media Query for Small Devices (301px to 600px) */
+@media only screen and (min-width: 301px) and (max-width: 600px) {
     .header__container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        justify-items: center; /* Center the items horizontally */
+        grid-template-columns: 1fr; /* Change grid layout for small screens */
+        gap: 2rem; /* Adjust the gap between grid items */
+        justify-items: center;
     }
 
     .me {
         height: 20rem;
         width: 20rem;
-        margin: auto; /* Center the element using auto margins */
+        margin: auto; 
     }
 }
 
-
-@media screen and (max-width: 400px) {
- 
-        .header__container {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            justify-items: center;
-        }
-    
-        .me {
-            height: 16rem;
-            width: 16rem;
-            margin: auto;
-        }
-    
-    
-    .cta,
-    .header__socials {
-        flex-direction: column;
-        align-items: center;
+/* Media Query for Medium Devices (601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .header__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
     }
-
-    .cta button {
-        width: 100%;
+    .me {
+        height: 20rem;
+        width: 20rem;
+        margin: auto; 
     }
 }
+
+/* Media Query for Large Devices (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .header__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+    .me {
+        height: 20rem;
+        width: 20rem;
+        margin: auto; 
+    }
+}
+
