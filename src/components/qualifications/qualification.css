@@ -1,8 +1,8 @@
+
 .education-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; 
-
+    gap: 1.5rem;
 }
 
 .education {
@@ -11,45 +11,52 @@
 }
 
 .timeline-dot {
-    width: 2.5rem; 
-    height: 2.5rem; 
     background: var(--color-primary);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.6rem;
     color: var(--color-bg-variant);
-    font-size: 1.6rem; 
-    margin-right: 1rem; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    margin-right: 1rem;
 }
 
-
-
 .education h3 {
-    color: var(--color-primary); 
-    font-size: 1.3rem; 
-    margin-bottom: 0.5rem; 
+    color: var(--color-primary);
+    font-size: 1.3rem;
 }
 
 .education p {
-    color: var(--color-text); 
-    font-size: 1rem; 
-    margin: 0.5rem 0; 
+    color: var(--color-text);
+    font-size: 1rem;
 }
-@media screen and (max-width: 480px) {
+
+.education-content {
+    flex-grow: 1;
+}
+
+.education-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.duration {
+    text-align: right;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 767px) {
+    .education-container {
+        gap: 1rem;
+    }
+
     .timeline-dot {
-        width: 1.8rem; 
-        height: 1.8rem; 
-        font-size: 1.2rem; 
-        margin-right: 0.5rem; 
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
     }
 
     .education h3 {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
 
     .education p {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 }
