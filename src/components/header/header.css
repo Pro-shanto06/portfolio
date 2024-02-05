@@ -45,6 +45,12 @@
     gap: 1.2rem;
 }
 
+.cta a{
+    width: 10rem;
+    font-size: 0.9rem;
+   
+}
+
 .header__socials {
     margin-top: 2.5rem;
     display: flex;
@@ -64,7 +70,7 @@
 .cta svg {
     vertical-align: middle;
     margin-right: 0.4rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .header__socials svg {
@@ -76,50 +82,36 @@
 @media only screen and (min-width: 301px) and (max-width: 600px) {
     .header__container {
         grid-template-columns: 1fr; /* Adjusting grid layout for small screens */
-        gap: 2rem; /* Adjusting the gap between grid items */
-        justify-items: center;
+        gap: 1rem; /* Adjusting the gap between grid items */
     }
 
     .header__content {
         margin-top: 2rem;
-         /* Adjusting margin-top for header__content on small screens */
+         
     }
 
     .header__content h1 {
-        font-size: 1.8rem;
-    }
-
-    .header__content p {
-        font-size: 0.8rem; /* Adjusting font-size for the <p> tag on small screens */
+        font-size: 2.3rem;
     }
 
     .me {
         margin-top: 1rem; /* Adjusting margin-top for .me on small screens */
-        width: 70%;
+        width: 80%;
     }
 
     .cta {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .cta a{
-        width:60%;
-        font-size: 0.8rem;
-    }
-    .cta svg {
-        font-size: 1.2rem;
-    }   
-    .header__socials svg {
-        font-size: 1.6rem;
-      } 
+     
+   
 }
 
 /* Media Query for Medium Devices (601px to 768px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .header__container {
-        grid-template-columns: 1fr; /* Adjusting grid layout for medium screens */
-        gap: 3rem; /* Adjusting the gap between grid items on medium screens */
-        justify-items: center;
+    grid-template-columns: 50% 45%;
+    gap: 5%;
     }
 
     .header__content {
@@ -127,23 +119,26 @@
     }
 
     .me {
-        margin-top: 1rem; /* Adjusting margin-top for .me on medium screens */
-        width: 50%;
+        margin-top: 5rem; /* Adjusting margin-top for .me on medium screens */
+       
+    }
+    .header__content h1 {
+        font-size: 2rem;
     }
 }
 
 /* Media Query for Large Devices (769px to 1024px) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .header__container {
-        grid-template-columns: 1fr; /* Adjusting grid layout for large screens */
-        gap: 1rem; /* Adjusting the gap between grid items on large screens */
-        justify-items: center;
-    }
+        grid-template-columns: 50% 45%;
+        gap: 5%;
+        }
 
     .me {
-        margin-top: 1rem; /* Adjusting margin-top for .me on large screens */
-        width: 50%;
+        margin-top: 5rem; /* Adjusting margin-top for .me on large screens */
+    }
+    .header__content h1 {
+        font-size: 2rem;
     }
 }
-
 
