@@ -80,19 +80,41 @@ textarea {
  
 }
 
+/* Media Query for Small Devices (301px to 600px) */
 @media only screen and (min-width: 301px) and (max-width: 600px) {
     .container.contact__container {
-        width: 60%; /* Adjust the width for small screens */
         grid-template-columns: 1fr; /* Adjust the grid columns for small screens */
         gap: 1.5rem; /* Adjust the gap for small screens */
     }
 
-    .contact__options {
-        grid-template-columns: 1fr; /* Adjust grid columns for contact options on small screens */
-        gap: 1rem; /* Adjust gap for contact options on small screens */
+    .container.contact__container {
+        width: 80%; /* Adjust the width for small screens */
     }
 
+    .contact__options {
+        grid-template-columns: 1fr; /* Adjust the grid columns for contact options */
+        gap: 1rem; /* Adjust the gap for contact options */
+    }
+
+    .contact__option {
+        padding: 1rem; /* Adjust padding for contact options on small screens */
+    }
+
+    .contact__option a {
+        font-size: 0.8rem; /* Adjust font size for contact option links on small screens */
+    }
+
+    form {
+        gap: 1rem; /* Adjust the gap for the form elements on small screens */
+    }
+
+    input,
+    textarea {
+        padding: 1rem; /* Adjust padding for input and textarea on small screens */
+        font-size: 0.9rem; /* Adjust font size for input and textarea on small screens */
+    }
 }
+
 
 
 
