@@ -1,6 +1,6 @@
 import React from 'react';
 import './qualification.css';
-import { FaGraduationCap } from 'react-icons/fa';
+
 
 const Qualifications = () => {
     const educationData = [
@@ -31,19 +31,17 @@ const Qualifications = () => {
             <div className="container education-container">
                 {educationData.map((edu, index) => (
                     <div key={index} className="education">
-                        <FaGraduationCap className="timeline-dot" />
-                        <div className="education-content">
-                            
-                            <div className="education-footer">
-                            <h3>{edu.title}</h3>
-                                <p className="duration">{edu.duration}</p>
-                            </div>
+                        
                             <div className="education-header">
-                                
+                            
+                            <h3>{edu.title}</h3>
                                 <p>{edu.institution}</p>
                                 <p>{edu.grade}</p>
                             </div>
-                        </div>
+
+                            <div className="education-footer">
+                                <p className="duration">{edu.duration}</p>
+                            </div>
                     </div>
                 ))}
             </div>

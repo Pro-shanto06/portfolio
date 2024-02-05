@@ -43,9 +43,9 @@ const About = () => {
               <small>24/7</small>
             </article>
           </div>
-          <p>Demonstrating expertise in React, Angular, Node.js, and languages such as C++, JavaScript, and Python, I contribute robust software development skills. Proficient in MongoDB and MySQL, I've led impactful projects, including an MEAN stack e-commerce platform and an Angular-based Game of Thrones quotes application. My commitment to precise problem-solving, coupled with adept team collaboration and leadership abilities, underscores my dedication to delivering sophisticated and user-centric solutions.</p>
+          <p>Skilled in building with React, Angular, and Node.js, as well as using languages like C++, JavaScript, and Python, I bring strong software development skills. I'm comfortable with databases like MongoDB and MySQL. I've successfully led projects, including creating an online store using the MEAN stack and building an Angular app for Game of Thrones quotes. I'm committed to solving problems accurately and enjoy collaborating with teams. My leadership abilities are dedicated to providing advanced and user-friendly solutions.</p>
 
-        <div className="cv">
+        <div>
         <a href={CV} download className='btn btn-primary'>Download CV</a>
         </div>
 

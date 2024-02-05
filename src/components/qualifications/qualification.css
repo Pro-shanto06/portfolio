@@ -1,13 +1,28 @@
-
+/* Common styles for all screen sizes */
 .education-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    background: var(--color-bg-variant);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 4px solid;
+    border-color: var(--color-bg-variant);
+    
+}
+
+.education-container:hover {
+    background: transparent;
+    border-color: var(--color-bg-variant);
 }
 
 .education {
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: 62% 33%;
+    gap: 5%;
+}
+
+.education-header,
+.education-footer {
+    padding: 1.5rem;
+    
 }
 
 .timeline-dot {
@@ -20,43 +35,62 @@
 
 .education h3 {
     color: var(--color-primary);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .education p {
-    color: var(--color-text);
+    color: var(--color-white);
     font-size: 1rem;
 }
 
-.education-content {
-    flex-grow: 1;
-}
-
-.education-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.duration {
-    text-align: right;
-}
-
-/* Media query for mobile screens */
-@media screen and (max-width: 767px) {
+/* Media Query for Large Devices (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .education-container {
-        gap: 1rem;
+        padding: 0.5rem;
     }
-
-    .timeline-dot {
-        font-size: 1.2rem;
-        margin-right: 0.5rem;
-    }
-
     .education h3 {
         font-size: 1.2rem;
     }
 
     .education p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+}
+
+/* Media Query for Medium Devices (601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .education-container {
+        padding: 0.1rem;
+    }
+
+
+    .education h3 {
+        font-size: 1rem;
+    }
+    .education p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Media Query for Small Devices (301px to 600px) */
+@media only screen and (min-width: 301px) and (max-width: 600px) {
+    .education-container {
+        padding: 0.1rem;
+    }
+
+    .education h3 {
+        font-size: 0.7rem;
+    }
+
+    .education {
+        display: grid;
+        grid-template-columns: 55% 44%;
+        gap: 1%;
+    }
+
+ 
+
+    .education p {
+        font-size: 0.6rem;
     }
 }

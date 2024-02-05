@@ -1,7 +1,7 @@
 .header__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
 }
 
 .header__content {
@@ -78,45 +78,148 @@
 
 
   /* Media Query for Small Devices (301px to 600px) */
-@media only screen and (min-width: 301px) and (max-width: 600px) {
+  @media only screen and (min-width: 301px) and (max-width: 600px) {
     .header__container {
-        grid-template-columns: 1fr; /* Change grid layout for small screens */
-        gap: 2rem; /* Adjust the gap between grid items */
+        grid-template-columns: 1fr; /* Adjusting grid layout for small screens */
+        gap: 2rem; /* Adjusting the gap between grid items */
         justify-items: center;
     }
 
+    .header__content {
+        margin-top: 2rem; /* Adjusting margin-top for header__content on small screens */
+    }
+
+    .header__content h1 {
+        font-size: 2rem; /* Adjusting font size for h1 on small screens */
+    }
+
+    .header__content h5 {
+        font-size: 1rem; /* Adjusting font size for h5 on small screens */
+    }
+
     .me {
-        height: 20rem;
-        width: 20rem;
-        margin: auto; 
+        margin-left: 0;
+        margin-top: 1rem; /* Adjusting margin-top for .me on small screens */
+        width: 18rem; /* Adjusting width for .me on small screens */
+        height: 18rem; /* Adjusting height for .me on small screens */
+    }
+
+    .cta {
+        margin-top: 1.5rem; /* Adjusting margin-top for .cta on small screens */
+        gap: 1rem; /* Adjusting the gap between .cta items on small screens */
+    }
+
+    .header__socials {
+        margin-top: 1.5rem; /* Adjusting margin-top for .header__socials on small screens */
+        gap: 0.5rem; /* Adjusting the gap between .header__socials items on small screens */
+    }
+
+    .social__icon {
+        font-size: 1.5rem; /* Adjusting font size for .social__icon on small screens */
+    }
+
+    .cta svg {
+        font-size: 1.2rem; /* Adjusting font size for .cta svg on small screens */
+    }
+
+    .header__socials svg {
+        font-size: 1.8rem; /* Adjusting font size for .header__socials svg on small screens */
     }
 }
 
-/* Media Query for Medium Devices (601px to 768px) */
+
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .header__container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        justify-items: center;
+        grid-template-columns: 1fr; /* Adjusting grid layout for medium screens */
+        gap: 3rem;
+        justify-items: center; /* Adjusting the gap between grid items on medium screens */
     }
+
+    .header__content {
+        margin-top: 2rem; /* Adjusting margin-top for header__content on medium screens */
+    }
+
+    .header__content h1 {
+        font-size: 2.2rem; /* Adjusting font size for h1 on medium screens */
+    }
+
+    .header__content h5 {
+        font-size: 1.1rem; /* Adjusting font size for h5 on medium screens */
+    }
+
     .me {
-        height: 20rem;
-        width: 20rem;
-        margin: auto; 
+        margin-top: 1rem; /* Adjusting margin-top for .me on medium screens */
+    }
+
+    .cta {
+        margin-top: 2rem; /* Adjusting margin-top for .cta on medium screens */
+        gap: 1.2rem; /* Adjusting the gap between .cta items on medium screens */
+    }
+
+    .header__socials {
+        margin-top: 2rem; /* Adjusting margin-top for .header__socials on medium screens */
+        gap: 0.7rem; /* Adjusting the gap between .header__socials items on medium screens */
+    }
+
+    .social__icon {
+        font-size: 1.7rem; /* Adjusting font size for .social__icon on medium screens */
+    }
+
+    .cta svg {
+        font-size: 1.3rem; /* Adjusting font size for .cta svg on medium screens */
+    }
+
+    .header__socials svg {
+        font-size: 1.9rem; /* Adjusting font size for .header__socials svg on medium screens */
     }
 }
+
 
 /* Media Query for Large Devices (769px to 1024px) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .header__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        justify-items: center;
+        grid-template-columns: 1fr; /* Adjusting grid layout for large screens */
+        gap: 1rem;
+        justify-items: center; /* Adjusting the gap between grid items on large screens */
     }
+
+    .header__content {
+        margin-top: 2rem; /* Adjusting margin-top for header__content on large screens */
+    }
+
+    .header__content h1 {
+        font-size: 2.5rem; /* Keeping the font size for h1 the same on large screens */
+    }
+
+    .header__content h5 {
+        font-size: 1.2rem; /* Keeping the font size for h5 the same on large screens */
+    }
+
     .me {
-        height: 20rem;
-        width: 20rem;
-        margin: auto; 
+        margin-top: 1rem; /* Adjusting margin-top for .me on large screens */
+    }
+
+    .cta {
+        margin-top: 2.5rem; /* Adjusting margin-top for .cta on large screens */
+        gap: 1.2rem; /* Adjusting the gap between .cta items on large screens */
+    }
+
+    .header__socials {
+        margin-top: 2.5rem; /* Adjusting margin-top for .header__socials on large screens */
+        gap: 0.8rem; /* Adjusting the gap between .header__socials items on large screens */
+    }
+
+    .social__icon {
+        font-size: 1.8rem; /* Keeping the font size for .social__icon the same on large screens */
+    }
+
+    .cta svg {
+        font-size: 1.5rem; /* Keeping the font size for .cta svg the same on large screens */
+    }
+
+    .header__socials svg {
+        font-size: 2rem; /* Keeping the font size for .header__socials svg the same on large screens */
     }
 }
+
 
