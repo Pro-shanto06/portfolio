@@ -80,26 +80,31 @@
   }
 
 
- /* Media Query for Small Devices (301px to 600px) */
+/* Media Query for Small Devices (301px to 600px) */
 @media only screen and (min-width: 301px) and (max-width: 600px) {
     .header__container {
-        grid-template-columns: 1fr; 
+        display: flex;
+        flex-direction: column; /* Change to column layout for small screens */
         gap: 1rem; 
         justify-items: center;
     }
-    
+
     .me {
         margin-top: 1rem;
         width: 16rem;
-        margin-left: 0;
+        margin-left: auto; /* Move to the right end on small screens */
+        margin-right: auto; /* Center the image horizontally on small screens */
+        order: 1; /* Change the order to 1 to show at the top */
+    }
+
+    .header__content {
+        order: 2; /* Change the order to 2 to show below the image */
     }
 
     .header__content h1 {
         font-size: 1.8rem;
-
     }
 
-   
     .header__content h5 {
         font-size: 1rem;
     }
@@ -107,19 +112,21 @@
     .header__content p {
         font-size: 0.8rem;
     }
-    .cta a{
+    
+    .cta a {
         font-size: 0.6rem;
         width: 7.5rem;
     }
+    
     .cta svg {
         font-size: 0.8rem;
-      }
+    }
+    
     .header__socials svg {
         font-size: 1.6rem;
-      }
-     
-   
+    }
 }
+
 
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
