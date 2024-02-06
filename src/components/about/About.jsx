@@ -23,6 +23,9 @@ const About = () => {
             <img src={ME2} alt="About image" />
           </div>
 
+
+          
+
         </div>
         
         <div className="about__content">
@@ -37,17 +40,10 @@ const About = () => {
               <h5>Projects</h5>
               <small>5+ completed</small>
             </article>
-            <article className='about__card'>
-              <BiSupport  className='about__icon'/>
-              <h5>Support</h5>
-              <small>24/7</small>
-            </article>
           </div>
           <p>Skilled in building with React, Angular, and Node.js, as well as using languages like C++, JavaScript, and Python, I bring strong software development skills. I'm comfortable with databases like MongoDB and MySQL. I've successfully led projects, including creating an online store using the MEAN stack and building an Angular app for Game of Thrones quotes. I'm committed to solving problems accurately and enjoy collaborating with teams. My leadership abilities are dedicated to providing advanced and user-friendly solutions.</p>
 
-        <div>
-        <a href={CV} download className='btn btn-primary'>Download CV</a>
-        </div>
+       
 
         </div>
       </div>
