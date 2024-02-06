@@ -13,8 +13,10 @@ const Header = () => {
         <h1>Proshanto Saha</h1>
         <h5>Fullstack Developer</h5>
         <p>Experienced software developer skilled in building web applications using React, Angular, and Node.js. Proficient in languages like C++, JavaScript, and Python. Known for solving problems with attention to detail and working collaboratively to create effective solutions.</p>
+        <div className='header__icons'>
         <CTA/>
         <HeaderSocial />
+        </div>
         </div>
         
         <div className="me">
