@@ -1,10 +1,8 @@
 import React from 'react'
 import './about.css'
 import ME2 from '../../assets/prooo.jpg'
-import CV from '../../assets/cv.pdf'
 import { LuAward } from "react-icons/lu";
 import { VscFolderLibrary } from "react-icons/vsc";
-import { BiSupport } from "react-icons/bi";
 
 
 
