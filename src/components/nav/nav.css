@@ -1,10 +1,8 @@
 /* Default styles for larger screens */
 nav {
-    background: rgb(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
+    padding: 0.5rem 1rem;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -12,7 +10,6 @@ nav {
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blur(15px);
 }
 
 nav a {
@@ -20,8 +17,7 @@ nav a {
     padding: 0.4rem;
     border-radius: 50%;
     display: flex;
-    columns: var(--color-light);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 nav a:hover {
@@ -33,9 +29,3 @@ nav a.active {
     color: var(--color-bg);
 }
 
-
-@media only screen and (max-width: 350px) {
-    nav a {
-        font-size: 1rem;
-    }
-}

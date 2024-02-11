@@ -21,8 +21,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;  /* Set the font family for the body text */
     background: var(--color-bg);        /* Set the background color using a custom variable */
-    color: var(--color-white);           /* Set the text color using a custom variable */
-    line-height: 1.7;                    /* Set the line height for better readability */
+    color: var(--color-white);           /* Set the text color using a custom variable */                 /* Set the line height for better readability */
 }
 
 
@@ -48,9 +47,6 @@ body {
     margin: 0 auto;  /* Center the container horizontally by setting left and right margins to auto */
 }
 
-
-
-
 section {
     padding-top: 3rem;
 }
@@ -65,7 +61,6 @@ section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
-
 
 
 a {

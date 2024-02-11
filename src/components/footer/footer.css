@@ -1,100 +1,78 @@
-/* Styling for permalinks */
-.permalinks {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Adjust the gap between icons and links */
-
-  /* Optional: Add some spacing and styling */
-  margin: 10px 0;
-  padding: 0;
-}
-
-/* Styling for individual list items */
-.permalinks li {
-  display: flex;
-  align-items: center;
-}
-
-/* Styling for icons */
-.permalinks li svg {
-  font-size: 1.5rem; /* Adjust the icon size */
-  margin-right: 5px;
-  color: black; /* Adjust the gap between icon and link */
-}
-
-/* Styling for links */
-.permalinks li a {
-  color: var(--color-black); /* Adjust the link color */
-  text-decoration: none;
-  font-size: 1rem; /* Adjust the font size for links */
-  transition: color 0.3s ease-in-out; /* Add smooth color transition on hover */
-}
-
-/* Styling for footer */
 footer {
   background: var(--color-primary);
-  padding: 3rem 0;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
-/* Styling for social icons in the footer */
-.footer__socials {
+.footer__container{
+  padding: 2rem 0 6rem;
+}
+
+.footer__title{
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer__list {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.footer__socials a {
-  background: var(--color-bg);
-  color: var(--color-white);
-  padding: 0.8rem;
-  border-radius: 0.7rem;
+.footer__list li {
   display: flex;
-  border: 2px solid transparent;
+  align-items: center;
 }
 
-.footer__socials a:hover {
-  background: var(--color-primary);
-  color: var(--color-bg);
-  border-color: var(--color-bg-variant);
+.footer__list svg {
+  margin-right: 0.2rem; 
 }
 
-.footer__socials svg {
+.footer__list li:hover .footer__link,
+.footer__list li:hover svg {
+  color: var(--color-bg); 
+}
+
+.footer__link {
+  color: var(--color-white);
+  
+}
+
+
+.footer__social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.footer__social-link{
+  color: var(--color-white);
   font-size: 1.5rem;
-  color: var(--color-primary);
 }
 
-.footer__socials a:hover svg {
+.footer__social a:hover svg {
   color: var(--color-bg);
 }
 
-/* Media Query for Small Devices (301px to 600px) */
-@media only screen and (min-width: 301px) and (max-width: 600px) {
-  .permalinks{
-    flex-direction:column;
-    gap:1.5rem;
+.footer__copy{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+/* Media Query for Small Devices (301px to 650px) */
+@media only screen and (min-width: 301px) and (max-width: 700px) {
+  .footer__list {
+    flex-direction: column;
+    align-items: center; /* Center-align list items horizontally */
   }
-  .footer__socials{
-    margin-bottom:2.6rem;
+
+  .footer__list li {
+    margin-bottom: 1rem; /* Add some spacing between stacked list items */
   }
 }
 
-/* Media Query for Medium Devices (601px to 768px) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  .permalinks{
-    flex-direction:column;
-    gap:1.5rem;
-  }
-  .footer__socials{
-    margin-bottom:2.6rem;
-  }
-}
 
 
 
