@@ -115,3 +115,10 @@ a:hover {
         width: var(--container-width-lg);
     }
 }
+
+@media only screen and (max-width: 300px) {
+    
+    section>h2 {
+       font-size: medium;
+    }
+}
