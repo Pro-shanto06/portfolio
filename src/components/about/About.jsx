@@ -3,6 +3,8 @@ import "./about.css";
 import ME2 from "../../assets/prooo.jpg";
 import { LuAward } from "react-icons/lu";
 import { VscFolderLibrary } from "react-icons/vsc";
+import CV from '../../assets/cv.pdf'
+import { IoCloudDownloadOutline } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -11,10 +13,10 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
+       
           <div className="about__me-image">
             <img src={ME2} alt="" />
-          </div>
+    
         </div>
 
         <div className="about__content">
@@ -41,6 +43,7 @@ const About = () => {
             leadership abilities are dedicated to providing advanced and
             user-friendly solutions.
           </p>
+          <a href={CV} download className='btn btn-primary'><IoCloudDownloadOutline />My Resume</a>
         </div>
       </div>
     </section>
