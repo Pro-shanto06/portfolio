@@ -18,7 +18,7 @@
   }
 
 
-  @media only screen and (min-width: 301px) and (max-width: 450px) {
+  @media only screen and (min-width: 201px) and (max-width: 450px) {
     .scroll-up-button {
       bottom: 4.5rem;
       right: 0.3rem;

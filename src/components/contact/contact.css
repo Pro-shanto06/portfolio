@@ -67,13 +67,50 @@ textarea {
 }
 
 /* Media Query for Small Devices (301px to 600px) */
-@media only screen and (min-width: 301px) and (max-width: 600px) {
+@media only screen and (min-width: 321px) and (max-width: 600px) {
     .container.contact__container {
         grid-template-columns: 1fr; /* Adjust the grid columns for small screens */
 
     }
    
 }
+
+/* Media Query for screens up to 320px */
+@media only screen and (max-width: 320px) {
+    .container.contact__container {
+        grid-template-columns: 1fr; /* Adjust the grid columns for small screens */
+    }
+
+    .contact__option {
+        padding: 0.2rem;
+        width: 95%; /* Adjust padding for contact options */
+    }
+
+    .contact__option-icon {
+        font-size: 1.2rem; /* Adjust icon size for contact options */
+        margin-bottom: 0.3rem; /* Adjust margin for icon in contact options */
+    }
+
+    .contact__option h3 {
+        font-size: 0.9rem; /* Adjust font size for link in contact options */
+    }
+
+    .contact__option h5 {
+        font-size: 0.4rem; /* Adjust font size for link in contact options */
+    }
+
+    .contact__option a {
+        margin-top: 0.5rem; /* Adjust margin for link in contact options */
+        font-size: 0.4rem; /* Adjust font size for link in contact options */
+    }
+
+    form {
+        width: 95%; /* Adjust gap between form elements */
+    }
+
+  
+}
+
 
 
 

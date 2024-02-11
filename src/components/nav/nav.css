@@ -29,3 +29,15 @@ nav a.active {
     color: var(--color-bg);
 }
 
+
+@media only screen and (max-width: 301px) {
+    nav {
+        padding: 0.3rem;
+        
+    }
+
+    nav a {
+        padding: 0.1rem;
+        font-size: 0.6rem;
+    }
+}
