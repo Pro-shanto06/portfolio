@@ -108,6 +108,10 @@ textarea {
         width: 95%; /* Adjust gap between form elements */
     }
 
+    .btn-primary {
+        font-size: 0.7rem;
+      }
+
   
 }
 

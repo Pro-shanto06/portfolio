@@ -129,6 +129,9 @@
     .about__card small {
         font-size: 0.6rem;
     }
+    .about__content a {
+        font-size: 0.7rem;
+    }
 
 }
 

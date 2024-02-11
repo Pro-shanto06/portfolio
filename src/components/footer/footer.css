@@ -71,6 +71,10 @@ footer {
   .footer__list li {
     margin-bottom: 1rem; /* Add some spacing between stacked list items */
   }
+  .footer__list a {
+    font-size: 0.8rem; /* Add some spacing between stacked list items */
+  }
+ 
 }
 
 
