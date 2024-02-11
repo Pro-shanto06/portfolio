@@ -25,19 +25,19 @@ const Contact = () => {
         <div className="contact__options">
           <article className="contact__option">
           <MdOutlineEmail className="contact__option-icon"/>
-            <h4>Email</h4>
+            <h3>Email</h3>
             <h5>proshantosaha1999@gmail.com</h5>
             <a href="mailto:proshantosaha1999@gmail.com" target="_blank">Send A Message</a>
           </article>
           <article className="contact__option">
           <PiMessengerLogoBold className="contact__option-icon" />
-            <h4>Messenger</h4>
+            <h3>Messenger</h3>
             <h5>Proshanto Saha</h5>
             <a href="https://m.me/Pacific000" target="_blank">Send A Message</a>
           </article>
           <article className="contact__option">
           <BsWhatsapp className="contact__option-icon"/>
-            <h4>Whatsapp</h4>
+            <h3>Whatsapp</h3>
             <h5>01982058615</h5>
             <a href="https://wa.me/8801982058615" target="_blank">Send A Message</a>
           </article>
