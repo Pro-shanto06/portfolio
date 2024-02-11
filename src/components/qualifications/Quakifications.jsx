@@ -26,7 +26,7 @@ const Qualifications = () => {
     return (
         <section id='qualification'>
             <h5>What Qualifications I have</h5>
-            <h2>My Qualifications</h2>
+            <h2>My Personal Journey</h2>
             <div className="container education-container">
                 {educationData.map((edu, index) => (
                     <div key={index} className="education">

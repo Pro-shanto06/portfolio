@@ -1,7 +1,7 @@
 /* Common styles for all screen sizes */
 .education-container {
     background: var(--color-bg-variant);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: 4px solid;
     border-color: var(--color-bg-variant);
@@ -15,118 +15,50 @@
 
 .education {
     display: grid;
-    grid-template-columns: 70% 29%;
-    gap: 1%;
+    grid-template-columns: 65% 35%;
 }
 
 .education-header,
 .education-footer {
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
+
 .education-footer {
     margin-left: auto;
     
 }
 
-.timeline-dot {
-    background: var(--color-primary);
-    border-radius: 50%;
-    font-size: 1.6rem;
-    color: var(--color-bg-variant);
-    margin-right: 1rem;
-}
+
 
 .education h3 {
     color: var(--color-primary);
-    font-size: 1.4rem;
+    
 }
 
 .education p {
     color: var(--color-white);
-    font-size: 1rem;
+    
 }
 
 /* Media Query for Large Devices (769px to 1024px) */
-@media only screen and (min-width: 651px) and (max-width: 1024px) {
+@media only screen and (min-width: 401px) and (max-width: 600px) {
     .education-container {
-        padding: 0.1rem;
+        padding: 0.5rem;
     }
-    .education h3 {
-        font-size: 1.3rem;
-    }
-    .education-footer {
-        margin-left: auto;
-        
-    }
-    .education p {
-        font-size: 0.85rem;
-    }
-}
-
-/* Media Query for Medium Devices (601px to 768px) */
-@media only screen and (min-width: 541px) and (max-width: 650px) {
-    .education-container {
-        padding: 0.1rem;
-    }
-
-    .education-footer {
-        margin-left: auto;
-        
-    }
-  
     .education h3 {
         font-size: 0.9rem;
     }
-    .education p {
-        font-size: 0.65rem;
-    }
-    .education-header,
-    .education-footer {
-        padding: 0.8rem;
-        
-    }
-}
-@media only screen and (min-width: 451px) and (max-width: 540px) {
-
-    .education-container {
-        padding: 0.1rem;
-    }
-
-
-.education-footer {
-    margin-left: auto;
-    
-}
-
-    .education h3 {
-        font-size: 0.7rem;
-    }
 
     .education p {
-        font-size: 0.5rem;
-    }
-
- 
-
-    .education-header,
-    .education-footer {
-        padding: 0.8rem;
-        
+        font-size: 0.6rem;
     }
 }
-@media only screen and (min-width: 341px) and (max-width: 450px) {
 
+@media only screen and (min-width: 301px) and (max-width: 400px) {
     .education-container {
-        padding: 0.1rem;
+        padding: 0.5rem;
     }
-
-
-.education-footer {
-    margin-left: auto;
-    
-}
-
     .education h3 {
         font-size: 0.6rem;
     }
@@ -134,42 +66,27 @@
     .education p {
         font-size: 0.4rem;
     }
+}
 
- 
-
-    .education-header,
+@media only screen and (max-width: 300px) {
+    .education {
+        grid-template-columns: 1fr;
+    }
     .education-footer {
-        padding: 0.6rem;
+        margin-left: 0;
         
     }
-}
 
-/* Media Query for Small Devices (301px to 600px) */
-@media only screen and (min-width: 301px) and (max-width: 340px) {
     .education-container {
-        padding: 0.1rem;
+        padding: 0.5rem;
     }
-
-
-.education-footer {
-    margin-left: auto;
-    
-}
-
     .education h3 {
-        font-size: 0.48rem;
+        font-size: 0.5rem;
     }
 
     .education p {
-        font-size: 0.35rem;
+        font-size: 0.4rem;
     }
-
- 
-
-    .education-header,
-    .education-footer {
-        padding: 0.5rem;
-        
-    }
-    
 }
+
+

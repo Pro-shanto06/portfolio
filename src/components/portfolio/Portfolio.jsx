@@ -14,7 +14,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
           <img src={IMG1} alt="" />
           </div>
-            <h3>MY responsive portfolio</h3>
+            <h3>My responsive portfolio</h3>
             <div className="portfolio__item-cta">
             <a href='https://github.com/Pro-shanto06/portfolio' className='btn' target='_blank'>Github</a>
             <a href='https://proshanto.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
