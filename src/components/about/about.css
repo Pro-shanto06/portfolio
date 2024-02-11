@@ -5,7 +5,7 @@
 }
 
 .about__me-image{
-    width: 90%;
+    width: 80%;
     overflow:hidden;
     transition:var(--transition);
 }
@@ -37,29 +37,37 @@
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
-    color: white;
+    color: var(--color-white);
 }
 
-
-
-
+.about__card h5 {
+    font-size: 1rem;
+}
 .about__card small {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.about__card svg {
+    font-size: 1.5rem;
+}
+
+.about__icon {
+    font-size: 10rem;
 }
 
 .about__content p {
-    margin-top: 1rem ;
+    margin-top: 1.5rem ;
     text-align: justify;
     font-size: 0.9rem;
 }
 
 
 .about__content a {
-    margin-top: 0.5rem ;
+    margin-top: 1.5rem ;
     font-size: 0.9rem;
 }
 
-.about__content svg {
+.about__cv svg {
     vertical-align: middle;
     margin-right: 0.4rem;
     font-size: 1rem;

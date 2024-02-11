@@ -37,13 +37,14 @@ const About = () => {
             using languages like C++, JavaScript, and Python, I bring strong
             software development skills. I'm comfortable with databases like
             MongoDB and MySQL. I've successfully led projects, including
-            creating an online store using the MEAN stack and building an
-            Angular app for Game of Thrones quotes. I'm committed to solving
+            creating an online store using the MEAN stack. I'm committed to solving
             problems accurately and enjoy collaborating with teams. My
             leadership abilities are dedicated to providing advanced and
             user-friendly solutions.
           </p>
+          <div className="about__cv">
           <a href={CV} download className='btn btn-primary'><IoCloudDownloadOutline />My Resume</a>
+          </div>
         </div>
       </div>
     </section>
