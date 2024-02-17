@@ -41,6 +41,7 @@ const Qualifications = () => {
                     </div>
                 ))}
             </div>
+            
         </section>
     );
 };
