@@ -52,7 +52,13 @@
 .education__title,
 .education__institution,
 .education__grade {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.education__duration,
+.education__institution,
+.education__grade {
+   font-size: 0.8rem;
 }
 
 .education__title{
@@ -60,18 +66,16 @@
 }
 
 /* Media Query for Screen Width between 351px and 790px */
-@media only screen and (min-width: 351px) and (max-width: 790px) {
+@media only screen and (min-width: 301px) and (max-width: 790px) {
     .education__container {
         grid-template-columns: 1fr;
         gap: 4rem;
     
     }
-  
-
 }
 
 /* Media Query for Screen Width up to 350px */
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 300px) {
     .education__container {
         grid-template-columns: 1fr;
         gap: 4rem;
