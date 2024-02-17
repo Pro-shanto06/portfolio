@@ -18,7 +18,7 @@
 /* Common styles for .education__item */
 .education__item {
     position: relative;
-    padding-left: 4rem;
+    padding-left: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -27,14 +27,14 @@
     content: '';
     position: absolute;
     inset-block: 0;
-    left: 2rem;
+    left: 0rem;
     border-left: 2px solid var(--color-primary);
 }
 
 /* Common styles for .education__icon */
 .education__icon {
     position: absolute;
-    left: 1.4rem;
+    left: -0.6rem;
     top: 0;
     background-color: var(--color-primary);
     color: var(--color-bg);
@@ -64,9 +64,10 @@
     .education__container {
         grid-template-columns: 1fr;
         gap: 4rem;
-        padding: 0.8rem; /* Adjusted padding */
-        padding-bottom: 2rem;
+    
     }
+  
+
 }
 
 /* Media Query for Screen Width up to 350px */

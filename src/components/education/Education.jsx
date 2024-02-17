@@ -32,35 +32,35 @@ const Education = () => {
             <div className="container education__container">
 
                 <div className="education__content">
-                <h3>Education</h3>
-                {educationData.map((edu, index) => (
-                    <article key={index} className='education__item'>
-                       
-                        <div className="education__icon">
-                        <FaGraduationCap  />
-                        </div>
-                      <div className="education__duration">{edu.duration}</div>
-                        <h4 className="education__title">{edu.title}</h4>
-                        <p className="education__institution">{edu.institution}</p>
-                        <p className="education__grade">{edu.grade}</p>
-                    </article>
-                       ))}
+                    <h3>Education</h3>
+                    {educationData.map((edu, index) => (
+                        <article key={index} className='education__item'>
+
+                            <div className="education__icon">
+                                <FaGraduationCap />
+                            </div>
+                            <div className="education__duration">{edu.duration}</div>
+                            <h4 className="education__title">{edu.title}</h4>
+                            <p className="education__institution">{edu.institution}</p>
+                            <p className="education__grade">{edu.grade}</p>
+                        </article>
+                    ))}
                 </div>
 
 
                 <div className="education__content">
-                <h3>Experience</h3>
-                <article className='education__item'>
-                <div className="education__icon">
-                        <MdOutlineWork  />
+                    <h3>Experience</h3>
+                    <article className='education__item'>
+                        <div className="education__icon">
+                            <MdOutlineWork />
                         </div>
-                       
-                      <div className="education__duration">10 Days</div>
+
+                        <div className="education__duration">10 Days</div>
                         <h4 className="education__title">Industrial Attachment (SELISE Digital Platforms)</h4>
                         <p className="education__institution">During my 10-day industrial attachment at SELISE, delving into software development with a focus on the MEAN stack. Created an e-commerce project, showcasing the ability to turn theoretical ideas into real-world applications.
-</p>
+                        </p>
                     </article>
-                   
+
                 </div>
 
 
