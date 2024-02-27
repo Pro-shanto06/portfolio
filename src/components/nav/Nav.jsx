@@ -14,7 +14,7 @@ const Nav = () => {
     <nav>
       <a href='#' onClick={()=>setActiveNav ('#') }className={activeNav === '#' ? 'active' : ''}><IoHomeOutline /></a>
       <a href='#about' onClick={()=>setActiveNav ('#about') } className={activeNav === '#about'? 'active' : ''}><FiUser /></a>
-      <a href='#qualification' onClick={()=>setActiveNav ('#qualification') } className={activeNav === '#qualification'? 'active' : ''}><IoSchool /></a>
+      <a href='#education' onClick={()=>setActiveNav ('#education') } className={activeNav === '#education'? 'active' : ''}><IoSchool /></a>
       <a href='#experience' onClick={()=>setActiveNav ('#experience') } className={activeNav === '#experience'? 'active' : ''}><PiUserCircleGearBold /></a>
       <a href='#portfolio' onClick={()=>setActiveNav ('#portfolio') } className={activeNav === '#portfolio'? 'active' : ''}><FaProjectDiagram /></a>
       <a href='#contact' onClick={()=>setActiveNav ('#contact') } className={activeNav === '#contact'? 'active' : ''}><BiMessageDetail /></a>

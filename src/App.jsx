@@ -7,7 +7,6 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import Qualification from './components/qualifications/Quakifications'
 import ScrollUpButton from './components/ScrollUpButton/ScrollUpButton';
 import Education from './components/education/Education'
 

@@ -76,7 +76,7 @@
 
   @media only screen and  (max-width:300px) {
     .about__container {
-    grid-template-columns:1fr; /* Adjusting grid layout for small screens */
+    grid-template-columns:1fr; 
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -114,7 +114,7 @@
 
   @media only screen and (min-width: 301px) and (max-width: 500px) {
     .about__container {
-    grid-template-columns:1fr; /* Adjusting grid layout for small screens */
+    grid-template-columns:1fr; 
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -148,7 +148,7 @@
 
 @media only screen and (min-width: 501px) and (max-width: 768px) {
     .about__container {
-    grid-template-columns:70%; /* Adjusting grid layout for small screens */
+    grid-template-columns:70%; 
     align-items: center;
     justify-items: center;
     justify-content: center;
@@ -162,9 +162,6 @@
 
 }
 
-
-
-/* Media Query for Medium Devices (601px to 768px) */
 @media only screen and (min-width: 769px) and (max-width: 1000px) {
  
     .about__content p {

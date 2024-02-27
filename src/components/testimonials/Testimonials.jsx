@@ -1,6 +1,6 @@
 import React from 'react'
 import './testimonials.css'
-import CLIENT from '../../assets/dishan.jpg'
+import CLIENT from '../../assets/prooo.jpg'
 
 import {Pagination} from 'swiper/modules';
 
