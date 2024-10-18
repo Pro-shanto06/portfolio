@@ -54,7 +54,7 @@
 }
 
 
-@media only screen and (max-width: 300px) {
+@media only screen and (min-width: 150px) and (max-width: 300px) {
     .portfolio__container {
         grid-template-columns: 1fr;
         justify-items: center; 
@@ -67,7 +67,11 @@
 
     .portfolio__item h3 {
         margin: 1rem 0 1rem;
-        font-size: 0.7rem; 
+        font-size: 0.8rem; 
+    }
+
+    .portfolio__item p {
+        font-size: 0.6rem; 
     }
 
     .portfolio__item-cta {

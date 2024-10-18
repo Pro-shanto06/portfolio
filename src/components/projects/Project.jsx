@@ -20,7 +20,7 @@ const portfolioData = [
     img: IMG4,
     title: "6sense Efficiency",
     description:
-      "An employee performance tracking system developed by integrating Jira and Trello APIs to manage and monitor tasks. The system allowed adding team members, tracking their daily assigned and completed tasks, and calculating performance metrics based on task completion rates. It also included detailed tracking of each day's tasks with the ability to add comments. Additionally, the system calculated monthly performance of every user.",
+      "An employee performance tracking system developed by integrating Jira and Trello APIs to manage and monitor tasks. The system allowed adding team members, tracking their daily assigned and completed tasks, and calculating performance metrics based on task completion rates.",
     liveLink: "https://6sense-efficiency.vercel.app",
   },
   {

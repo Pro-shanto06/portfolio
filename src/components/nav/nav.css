@@ -1,43 +1,55 @@
-/* Default styles for larger screens */
 nav {
-    background: rgba(0, 0, 0, 0.5);
-    width: max-content;
-    padding: 0.5rem 1rem;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  width: max-content;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
 }
 
 nav a {
-    background: transparent;
-    padding: 0.4rem;
-    border-radius: 50%;
-    display: flex;
-    font-size: 1.3rem;
+  background: transparent;
+  padding: 0.4rem;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.3rem;
 }
 
 nav a:hover {
-    background: rgb(0, 0, 0, 0.3);
+  background: rgb(0, 0, 0, 0.3);
 }
 
 nav a.active {
-    background: var(--color-primary);
-    color: var(--color-bg);
+  background: var(--color-primary);
+  color: var(--color-bg);
 }
 
-
+@media only screen and (max-width: 401px) {
+  nav a {
+    font-size: 1rem;
+  }
+}
 @media only screen and (max-width: 301px) {
-    nav {
-        padding: 0.3rem;
-        
-    }
+  nav {
+    padding: 0.3rem 0.6rem;
+  }
 
-    nav a {
-        padding: 0.1rem;
-        font-size: 0.6rem;
-    }
+  nav a {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 251px) {
+  nav {
+    padding: 0.2rem 0.4rem;
+  }
+
+  nav a {
+    padding: 0rem;
+    font-size: 0.6rem;
+  }
 }

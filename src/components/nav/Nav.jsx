@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import { BiMessageDetail } from "react-icons/bi";
 import { IoSchool } from "react-icons/io5";
@@ -8,54 +8,31 @@ import {
   FaLaptopCode,
   FaProjectDiagram,
 } from "react-icons/fa";
-import { useState } from "react";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
+
+  const navLinks = [
+    { href: "#", icon: <FaHouseUser /> },
+    { href: "#about", icon: <FaUserSecret /> },
+    { href: "#skill", icon: <FaLaptopCode /> },
+    { href: "#qualification", icon: <IoSchool /> },
+    { href: "#portfolio", icon: <FaProjectDiagram /> },
+    { href: "#contact", icon: <BiMessageDetail /> },
+  ];
+
   return (
     <nav>
-      <a
-        href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? "active" : ""}
-      >
-        <FaHouseUser />
-      </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? "active" : ""}
-      >
-        <FaUserSecret />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? "active" : ""}
-      >
-        <FaLaptopCode />
-      </a>
-      <a
-        href="#qualification"
-        onClick={() => setActiveNav("#qualification")}
-        className={activeNav === "#qualification" ? "active" : ""}
-      >
-        <IoSchool />
-      </a>
-      <a
-        href="#portfolio"
-        onClick={() => setActiveNav("#portfolio")}
-        className={activeNav === "#portfolio" ? "active" : ""}
-      >
-        <FaProjectDiagram />
-      </a>
-      <a
-        href="#contact"
-        onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? "active" : ""}
-      >
-        <BiMessageDetail />
-      </a>
+      {navLinks.map((link, index) => (
+        <a
+          key={index}
+          href={link.href}
+          onClick={() => setActiveNav(link.href)}
+          className={activeNav === link.href ? "active" : ""}
+        >
+          {link.icon}
+        </a>
+      ))}
     </nav>
   );
 };

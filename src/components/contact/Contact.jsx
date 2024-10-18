@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { PiMessengerLogoBold } from "react-icons/pi";
 import { BsWhatsapp } from "react-icons/bs";
-import { useRef } from "react";
 import emailjs from "emailjs-com";
+
+const contactOptions = [
+  {
+    icon: <MdOutlineEmail className="contact__option-icon" />,
+    title: "Email",
+    contact: "proshantosaha1999@gmail.com",
+    link: "mailto:proshantosaha1999@gmail.com",
+  },
+  {
+    icon: <PiMessengerLogoBold className="contact__option-icon" />,
+    title: "Messenger",
+    contact: "Proshanto Saha",
+    link: "https://m.me/Pacific000",
+    linkText: "Send A Message",
+  },
+  {
+    icon: <BsWhatsapp className="contact__option-icon" />,
+    title: "Whatsapp",
+    contact: "01982058615",
+    link: "https://wa.me/8801982058615",
+    linkText: "Send A Message",
+  },
+];
 
 const Contact = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,30 +50,16 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h3>Email</h3>
-            <h5>proshantosaha1999@gmail.com</h5>
-            <a href="mailto:proshantosaha1999@gmail.com" target="_blank">
-              Send A Message
-            </a>
-          </article>
-          <article className="contact__option">
-            <PiMessengerLogoBold className="contact__option-icon" />
-            <h3>Messenger</h3>
-            <h5>Proshanto Saha</h5>
-            <a href="https://m.me/Pacific000" target="_blank">
-              Send A Message
-            </a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h3>Whatsapp</h3>
-            <h5>01982058615</h5>
-            <a href="https://wa.me/8801982058615" target="_blank">
-              Send A Message
-            </a>
-          </article>
+          {contactOptions.map((option, index) => (
+            <article key={index} className="contact__option">
+              {option.icon}
+              <h3>{option.title}</h3>
+              <h5>{option.contact}</h5>
+              <a href={option.link} target="_blank" rel="noopener noreferrer">
+                {option.linkText}
+              </a>
+            </article>
+          ))}
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
@@ -59,19 +68,19 @@ const Contact = () => {
             name="name"
             placeholder="Your Full Name"
             required
-          ></input>
+          />
           <input
             type="email"
             name="email"
             placeholder="Your Email"
             required
-          ></input>
+          />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
             required
-          ></textarea>
+          />
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>

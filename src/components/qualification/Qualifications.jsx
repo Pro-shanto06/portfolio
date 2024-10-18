@@ -60,6 +60,7 @@ const Qualification = () => {
             </article>
           ))}
         </div>
+        
         <div className="qualification__content">
           <h2>
             <FaGraduationCap /> Education

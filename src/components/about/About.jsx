@@ -5,7 +5,7 @@ import { LuAward } from "react-icons/lu";
 import { VscFolderLibrary } from "react-icons/vsc";
 import CV from "../../assets/cv.pdf";
 import { IoCloudDownloadOutline } from "react-icons/io5";
-import { IoEyeOutline } from "react-icons/io5"; // Import eye icon for preview button
+import { IoEyeOutline } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -49,7 +49,12 @@ const About = () => {
               <IoCloudDownloadOutline />
               Download My Resume
             </a>
-            <a href={CV} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            <a
+              href={CV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+            >
               <IoEyeOutline />
               View My Resume
             </a>
