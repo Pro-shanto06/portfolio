@@ -1,12 +1,12 @@
 import React from "react";
-import "./education.css";
-import { MdOutlineWork } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa6";
+import { BiSolidBriefcase } from "react-icons/bi";
+import "./qualifications.css";
 
-const Education = () => {
+const Qualification = () => {
   const educationData = [
     {
-      title: "Bachelor of Science in Computer Science and Engineering",
+      title: "Bachelor of Science(BSc)",
       institution: "University of Information Technology & Sciences (UITS)",
       duration: "01/2020 - 12/2023",
       grade: "CGPA: 3.81 Out of 4.00",
@@ -27,7 +27,7 @@ const Education = () => {
 
   const experienceData = [
     {
-      title: "Software Enginner Intern",
+      title: "Software Engineer Intern",
       institution: "6sense Technologies",
       duration: "07/2024 - 10/2024",
       description:
@@ -43,36 +43,33 @@ const Education = () => {
   ];
 
   return (
-    <section id="education">
+    <section id="qualification">
       <h5>What Qualifications I have</h5>
       <h2>My Personal Journey</h2>
-      <div className="container education__container">
-        <div className="education__content">
-          <h3>Education</h3>
-          {educationData.map((edu, index) => (
-            <article key={index} className="education__item">
-              <div className="education__icon">
-                <FaGraduationCap />
-              </div>
-              <div className="education__duration">{edu.duration}</div>
-              <h4 className="education__title">{edu.title}</h4>
-              <p className="education__institution">{edu.institution}</p>
-              <p className="education__grade">{edu.grade}</p>
+      <div className="container qualification__container">
+        <div className="qualification__content">
+          <h2>
+            <BiSolidBriefcase /> Experience
+          </h2>
+          {experienceData.map((exp, index) => (
+            <article key={index} className="qualification__item">
+              <h3 className="qualification__duration">{exp.duration}</h3>
+              <h3 className="qualification__title">{exp.title}</h3>
+              <h4>{exp.institution}</h4>
+              <p>{exp.description}</p>
             </article>
           ))}
         </div>
-
-        <div className="education__content">
-          <h3>Experience</h3>
-          {experienceData.map((exp, index) => (
-            <article key={index} className="education__item">
-              <div className="education__icon">
-                <MdOutlineWork />
-              </div>
-              <div className="education__duration">{exp.duration}</div>
-              <h4 className="education__title">{exp.title}</h4>
-              <p className="education__institution">{exp.institution}</p>
-              <p className="education__description">{exp.description}</p>
+        <div className="qualification__content">
+          <h2>
+            <FaGraduationCap /> Education
+          </h2>
+          {educationData.map((edu, index) => (
+            <article key={index} className="qualification__item">
+              <h3 className="qualification__duration">{edu.duration}</h3>
+              <h3 className="qualification__title">{edu.title}</h3>
+              <h4>{edu.institution}</h4>
+              <p>{edu.grade}</p>
             </article>
           ))}
         </div>
@@ -81,4 +78,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Qualification;

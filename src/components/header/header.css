@@ -68,7 +68,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 300px) {
+  @media only screen and (min-width: 150px) and (max-width: 300px) {
   .header__container {
     display: flex;
     flex-direction: column;
@@ -102,14 +102,14 @@
   }
 
   .header__contact a {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 
   .header__contact svg {
     font-size: 0.8rem;
   }
   .header__socials svg {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .header__socials {
     gap: 0.4rem;

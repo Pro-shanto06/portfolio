@@ -12,13 +12,9 @@ const Header = () => {
           <h1>Proshanto Saha</h1>
           <h5>Fullstack Developer</h5>
           <p>
-            Experienced Software Engineer with expertise in NestJs, Angular, and
-            React, specializing in building scalable, high-performance web
-            applications. Completed a 3-month Software Engineer Internship,
-            gaining hands-on experience in designing and implementing robust
-            server-side solutions. Passionate about competitive programming,
-            with strong problem-solving abilities and a solid foundation in
-            algorithms and data structures.
+            Experienced Software Engineer specializing in NestJS, Angular, and
+            React, with a passion for building scalable web applications and a
+            strong foundation in competitive programming.
           </p>
           <div className="header__contact">
             <a href="#contact" className="btn btn-primary">

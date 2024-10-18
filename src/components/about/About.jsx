@@ -3,8 +3,9 @@ import "./about.css";
 import ME2 from "../../assets/prooo.jpg";
 import { LuAward } from "react-icons/lu";
 import { VscFolderLibrary } from "react-icons/vsc";
-import CV from '../../assets/cv.pdf'
+import CV from "../../assets/cv.pdf";
 import { IoCloudDownloadOutline } from "react-icons/io5";
+import { IoEyeOutline } from "react-icons/io5"; // Import eye icon for preview button
 
 const About = () => {
   return (
@@ -13,10 +14,8 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className="container about__container">
-       
-          <div className="about__me-image">
-            <img src={ME2} alt="" />
-    
+        <div className="about__me-image">
+          <img src={ME2} alt="" />
         </div>
 
         <div className="about__content">
@@ -24,7 +23,7 @@ const About = () => {
             <article className="about__card">
               <LuAward className="about__icon" />
               <h5>Experience</h5>
-              <small>No Professional Experience Yet</small>
+              <small>3-month Software Engineer Internship</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
@@ -32,18 +31,28 @@ const About = () => {
               <small>5+ completed</small>
             </article>
           </div>
+
           <p>
-            Skilled in building with React, Angular, and Node.js, as well as
-            using languages like C++, JavaScript, and Python, I bring strong
-            software development skills. I'm comfortable with databases like
-            MongoDB and MySQL. I've successfully led projects, including
-            creating an online store using the MEAN stack. I'm committed to solving
-            problems accurately and enjoy collaborating with teams. My
-            leadership abilities are dedicated to providing advanced and
-            user-friendly solutions.
+            As an experienced Software Engineer, I specialize in building
+            scalable, high-performance web applications using NestJS, Angular,
+            and React. I completed a 3-month Software Engineer Internship,
+            gaining hands-on experience in designing and implementing robust
+            server-side solutions. I possess strong problem-solving abilities,
+            backed by a solid foundation in algorithms and data structures, and
+            am skilled in languages such as C++, JavaScript, and Python. I have
+            experience with databases like MongoDB and MySQL. I am dedicated to
+            providing advanced, user-friendly solutions and thrive in
+            collaborative team environments.
           </p>
           <div className="about__cv">
-          <a href={CV} download className='btn btn-primary'><IoCloudDownloadOutline />My Resume</a>
+            <a href={CV} download className="btn btn-primary">
+              <IoCloudDownloadOutline />
+              Download My Resume
+            </a>
+            <a href={CV} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <IoEyeOutline />
+              View My Resume
+            </a>
           </div>
         </div>
       </div>
