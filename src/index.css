@@ -1,31 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-  margin: 0; /* Set margin to zero */
-  padding: 0; /* Set padding to zero */
-  border: 0; /* Set border to zero */
-  outline: 0; /* Remove outline */
-  box-sizing: border-box; /* Use border-box box-sizing */
-  list-style: none; /* Remove list styling */
-  text-decoration: none; /* Remove text decoration */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar in WebKit browsers (like Chrome and Safari) */
+  display: none;
 }
 
 body {
-  font-family: "Poppins", sans-serif; /* Set the font family for the body text */
-  background: var(
-    --color-bg
-  ); /* Set the background color using a custom variable */
-  color: var(
-    --color-white
-  ); /* Set the text color using a custom variable */ /* Set the line height for better readability */
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-white);
 }
 
 :root {
@@ -44,10 +40,8 @@ body {
 
 /*-----------general styles--------------*/
 .container {
-  width: var(
-    --container-width-lg
-  ); /* Set the width of the container using a custom variable for a large size */
-  margin: 0 auto; /* Center the container horizontally by setting left and right margins to auto */
+  width: var(--container-width-lg);
+  margin: 0 auto;
 }
 
 section {

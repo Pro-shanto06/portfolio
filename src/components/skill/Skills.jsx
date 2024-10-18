@@ -14,17 +14,17 @@ const skillsData = {
 const Skill = () => {
   return (
     <section id="skill">
-      <h5>What Skills I have</h5>
+      <h5>Skills I have</h5>
       <h2>My Skills</h2>
 
-      <div className="container experience__container">
+      <div className="container skill__container">
         {Object.keys(skillsData).map((category) => (
-          <div className="experience__category" key={category}>
+          <div className="skill__category" key={category}>
             <h3>{category}</h3>
-            <div className="experience__content">
+            <div className="skill__content">
               {skillsData[category].map((skill) => (
-                <article className="experience__details" key={skill}>
-                  <BsFillPatchCheckFill className="experience__details-icon" />
+                <article className="skill__details" key={skill}>
+                  <BsFillPatchCheckFill className="skill__details-icon" />
                   <div>
                     <h4>{skill}</h4>
                   </div>

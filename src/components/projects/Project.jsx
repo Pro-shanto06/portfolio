@@ -8,14 +8,14 @@ import IMG5 from "../../assets/6sensehq.png";
 import IMG6 from "../../assets/random.jpg";
 
 const portfolioData = [
-  {
-    img: IMG1,
-    title: "My Responsive Portfolio",
-    description:
-      "Created a dynamic portfolio using React, showcasing my skills in web development and highlighting a diverse range of projects. Implemented responsive design principles to ensure optimal viewing across devices Additionally, integrated contact functionality to facilitate communication.",
-    githubLink: "https://github.com/Pro-shanto06/portfolio",
-    liveLink: "https://proshanto.vercel.app",
-  },
+  // {
+  //   img: IMG1,
+  //   title: "My Responsive Portfolio",
+  //   description:
+  //     "Created a dynamic portfolio using React, showcasing my skills in web development and highlighting a diverse range of projects. Implemented responsive design principles to ensure optimal viewing across devices Additionally, integrated contact functionality to facilitate communication.",
+  //   githubLink: "https://github.com/Pro-shanto06/portfolio",
+  //   liveLink: "https://proshanto.vercel.app",
+  // },
   {
     img: IMG4,
     title: "6sense Efficiency",
@@ -65,7 +65,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
 
       <div className="container portfolio__container">
         {portfolioData.map((project, index) => (

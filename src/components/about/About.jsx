@@ -50,7 +50,7 @@ const About = () => {
               Download My Resume
             </a>
             <a
-              href={CV}
+              href="https://flowcv.com/resume/irfavn0sh8"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-secondary"
