@@ -1,0 +1,39 @@
+.scroll-up-button {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1rem;
+}
+
+.scroll-up-button.visible {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 450px) {
+  .scroll-up-button {
+    bottom: 4.5rem;
+    right: 0.3rem;
+    padding: 0.2rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+  .scroll-up-button {
+    bottom: 4.5rem;
+    right: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .scroll-up-button {
+    right: 0.6rem;
+  }
+}
