@@ -1,13 +1,13 @@
 import React from "react";
 import "./project.css";
-import IMG1 from "../../assets/portfolio.png";
+// import IMG1 from "../../assets/portfolio.png";
 import IMG2 from "../../assets/clickshop.png";
 import IMG3 from "../../assets/engrhire.png";
 import IMG4 from "../../assets/6sense-efficiency.png";
 import IMG5 from "../../assets/6sensehq.png";
 import IMG6 from "../../assets/random.jpg";
 
-const portfolioData = [
+const projectData = [
   // {
   //   img: IMG1,
   //   title: "My Responsive Portfolio",
@@ -61,21 +61,21 @@ const portfolioData = [
   },
 ];
 
-const Portfolio = () => {
+const project = () => {
   return (
-    <section id="portfolio">
+    <section id="project">
       <h5>My Recent Work</h5>
       <h2>Projects</h2>
 
-      <div className="container portfolio__container">
-        {portfolioData.map((project, index) => (
-          <article key={index} className="portfolio__item">
-            <div className="portfolio__item-image">
+      <div className="container project__container">
+        {projectData.map((project, index) => (
+          <article key={index} className="project__item">
+            <div className="project__item-image">
               <img src={project.img} alt={project.title} />
             </div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <div className="portfolio__item-cta">
+            <div className="project__item-cta">
               {project.githubLink && (
                 <a href={project.githubLink} className="btn" target="_blank">
                   Github
@@ -98,4 +98,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default project;

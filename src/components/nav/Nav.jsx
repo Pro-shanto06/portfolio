@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./nav.css";
 import { BiMessageDetail } from "react-icons/bi";
 import { IoSchool } from "react-icons/io5";
@@ -13,13 +13,35 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
 
   const navLinks = [
-    { href: "#", icon: <FaHouseUser /> },
-    { href: "#about", icon: <FaUserSecret /> },
-    { href: "#skill", icon: <FaLaptopCode /> },
-    { href: "#qualification", icon: <IoSchool /> },
-    { href: "#portfolio", icon: <FaProjectDiagram /> },
-    { href: "#contact", icon: <BiMessageDetail /> },
+    { href: "#", icon: <FaHouseUser />, id: "home" },
+    { href: "#about", icon: <FaUserSecret />, id: "about" },
+    { href: "#skill", icon: <FaLaptopCode />, id: "skills" },
+    { href: "#qualification", icon: <IoSchool />, id: "qualification" },
+    { href: "#project", icon: <FaProjectDiagram />, id: "project" },
+    { href: "#contact", icon: <BiMessageDetail />, id: "contact" },
   ];
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = `#${entry.target.id}`;
+            setActiveNav(sectionId);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   return (
     <nav>

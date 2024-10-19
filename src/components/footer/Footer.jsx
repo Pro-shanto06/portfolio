@@ -18,7 +18,7 @@ const Footer = () => {
     { icon: <FaUserSecret />, label: "About", href: "#about" },
     { icon: <FaLaptopCode />, label: "Skills", href: "#skill" },
     { icon: <IoSchool />, label: "Qualifications", href: "#qualification" },
-    { icon: <FaProjectDiagram />, label: "Projects", href: "#portfolio" },
+    { icon: <FaProjectDiagram />, label: "Projects", href: "#project" },
     { icon: <BiMessageDetail />, label: "Contact", href: "#contact" },
   ];
   const socialLinks = [
