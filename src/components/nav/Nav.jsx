@@ -13,7 +13,7 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
 
   const navLinks = [
-    { href: "#", icon: <FaHouseUser />, id: "home" },
+    { href: "#home", icon: <FaHouseUser />, id: "home" },
     { href: "#about", icon: <FaUserSecret />, id: "about" },
     { href: "#skill", icon: <FaLaptopCode />, id: "skills" },
     { href: "#qualification", icon: <IoSchool />, id: "qualification" },
@@ -33,7 +33,7 @@ const Nav = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
     sections.forEach((section) => observer.observe(section));

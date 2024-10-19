@@ -14,7 +14,7 @@ import { IoSchool } from "react-icons/io5";
 
 const Footer = () => {
   const navLinks = [
-    { icon: <FaHouseUser />, label: "Profile", href: "#" },
+    { icon: <FaHouseUser />, label: "Profile", href: "#home" },
     { icon: <FaUserSecret />, label: "About", href: "#about" },
     { icon: <FaLaptopCode />, label: "Skills", href: "#skill" },
     { icon: <IoSchool />, label: "Qualifications", href: "#qualification" },
