@@ -1,52 +1,40 @@
-# Portfolio Website
 
-# This project is a personal portfolio website built with React.js. 
-# The website showcases the developer's skills, experience, and projects, 
-# and provides contact information. It features sections such as About Me, 
-# Skills, Experience, Portfolio, and Testimonials.
+# Personal Portfolio Website
 
-# Demo
-# You can view the live demo of the portfolio at https://proshanto.vercel.app.
+## Overview
+This portfolio is a responsive personal website built using React.js. It showcases my skills, projects, experience, and provides contact information for potential clients or employers. The site also includes downloadable and viewable versions of my resume.
 
-# Features:
-# - Responsive Design: The website is fully responsive, ensuring optimal viewing experience 
-#   on different screen sizes and devices.
-# - Interactive Navigation: Smooth scrolling navigation between different sections.
-# - Downloadable Resume: Users can download or view the resume.
-# - Skills and Projects: Detailed display of skills and completed projects.
-# - Contact Form: Functional form for contacting via email.
+## Demo
+- You can view the live demo of the portfolio at https://proshanto.vercel.app.
 
-# Installation:
+## Features
+- **Responsive Design:** Works well on both desktop and mobile devices.
+- **Download/View Resume:** Users can download or view the resume directly from the website.
+- **Project Showcase:** A detailed list of the projects I’ve worked on with descriptions and technologies used.
+- **Contact Form:** Visitors can send messages directly to me through the contact form.
+- **Smooth Navigation:** Easy navigation with sections for About, Skills, Projects, and Contact.
 
-# 1. Clone the repository:
+## Technologies Used
+- **Frontend:** React.js
+- **Styling:** CSS3
+- **Icons:** React Icons
+- **Image Slider:** Swiper.js for testimonial/carousel sections
+
+## Installation
+
+1. **Clone the repository:**
+
+```bash
 git clone https://github.com/Pro-shanto06/portfolio.git
+```
+2. **Install dependencies:**
 
-# 2. Install dependencies:
-# Make sure you have Node.js installed. Then, install the required dependencies:
+```bash
 npm install
+ ```
 
-# Usage:
+3. **Start the server:**
 
-# 1. Start the development server:
-# To run the project locally, start the development server:
+```bash
 npm start
-# The website will be available at http://localhost:3000.
-
-# 2. Build the project for production:
-# To create an optimized production build:
-npm run build
-# This will generate a build folder with the static files to deploy.
-
-# Technologies:
-# - React.js: JavaScript library for building user interfaces.
-# - CSS3: Custom styles for layout and design.
-# - React Icons: Used for various icons throughout the website.
-# - HTML5: Markup for the website structure.
-
-
-# In the project directory, you can run:
-
-# `npm start`
-# Runs the app in the development mode.
-# Open http://localhost:3000 to view it in the browser.
-
+```
