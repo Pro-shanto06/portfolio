@@ -18,7 +18,6 @@ This portfolio is a responsive personal website built using React.js. It showcas
 - **Frontend:** React.js
 - **Styling:** CSS3
 - **Icons:** React Icons
-- **Image Slider:** Swiper.js for testimonial/carousel sections
 
 ## Installation
 
